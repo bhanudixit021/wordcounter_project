@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>C</title>
+</head>
+<body>
+<h1>
+   The number of words are {{ count }}
+</h1>
+<a href="{% url 'home' %}">Start again</a>
+<br />
+<br />
+Your text :
+  <br />  {{ fulltext1 }}
+<h1> Word Count </h1>
+<br/>
+{% for word, counttotal in dict %}
+
+{{word}} - {{counttotal}}
+<br/>
+{% endfor %}
+</body>
+</html>

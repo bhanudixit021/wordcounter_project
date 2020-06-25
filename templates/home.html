@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>THIS IS THE HOME PAGE</title>
+</head>
+<body>
+HI EVERYBODY THIS will be your landing page.
+<form action="{% url 'count' %}">
+    <textarea cols="40" rows="5" name="fulltext"></textarea>
+    <br />
+  <input type="submit" value="Count!"/>
+</form>
+<br/>
+<br/>
+<h2>
+    <a href="{%url 'about'%}">ABOUT</a>
+</h2>
+
+</body>
+</html>
